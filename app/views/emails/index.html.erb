@@ -1,0 +1,29 @@
+<div style="margin: 40px;">
+    <h1 class="text-center mb-4">Emails#index</h1>
+    <div class="row">
+    
+        <div class="col-4">   
+        
+            <%@emails.each do |email|%>
+                <%if email.read == false%>
+                    <div class="card border-dark row">                    
+                        <div class="card-header">
+                            <p class="strong"> <%=email.objet%></p>
+                        </div>
+                    </div>
+                        
+                <% else %>
+                    <div class="card border-light row">                    
+                        <div class="card-header">
+                            <p> <%=email.objet%></p>
+                        </div>
+                    </div>
+                      
+                <%end%>
+                
+            <%end%>
+        </div>
+        <div class="card col-8">
+        </div>
+    </div>
+</div>
