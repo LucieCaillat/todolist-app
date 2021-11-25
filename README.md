@@ -1,24 +1,41 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+Gmail-like
 
-* Ruby version
+Web project i made during my bootcamp at The Hacking Project
 
-* System dependencies
+### 🏠 [Homepage](https://ajax-gmail-like.herokuapp.com/)
 
-* Configuration
+### ✨ [Demo](https://ajax-gmail-like.herokuapp.com/emails)
 
-* Database creation
+## Prerequisites
 
-* Database initialization
+- Rails -> 5.2.3
+- Ruby -> 2.7.4
 
-* How to run the test suite
+## Install
 
-* Services (job queues, cache servers, search engines, etc.)
+starting on localhost:3000
 
-* Deployment instructions
+bundle install
+rails db:setup
+rails server
 
-* ...
+
+## 🤝 Contributing
+
+As this is course a project i made during a bootcamp i don't accept any contributions, but feel free to clone the repository and try to fix them !
+
+## Author
+
+👤 Lucie Caillat
+
+
+## Show your support
+
+Give a ⭐️ if this project helped you!
+
+---
+
+This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)
