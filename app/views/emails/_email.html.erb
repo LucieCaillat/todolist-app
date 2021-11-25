@@ -7,7 +7,7 @@
             <% end %>
     </div>
     <div style="margin: 40px;">
-            <%= form_tag(emails_path, method: :post, class: "form", remote: true) do %>    
+            <%= form_tag(email_path(email.id), method: :patch, class: "form", remote: true) do %>    
                 <%= submit_tag 'Marquer comme non-lu', :name => 'commit'%>
             <% end %>
     </div>
