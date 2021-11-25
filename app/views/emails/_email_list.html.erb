@@ -1,0 +1,5 @@
+<div class="card border-dark row" id="<%=email.id%>">                    
+    <div class="card-header">
+        <p class="strong"> <%= link_to "#{email.objet}", email_path(email.id), remote: true %></p>
+    </div>
+</div>

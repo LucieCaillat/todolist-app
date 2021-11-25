@@ -1,2 +1,2 @@
-alert("le fichier JS est exécuté!");
 document.getElementById("read-email").innerHTML = "<%= j render 'email', email: @email %>";
+document.getElementById("<%=@email.id%>").setAttribute("class", "card border-light row");

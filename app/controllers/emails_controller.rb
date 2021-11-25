@@ -13,4 +13,15 @@ class EmailsController < ApplicationController
     end
 
   end
+
+  def create
+    @email = Email.create(objet: Faker::Book.genre, body: Faker::Books::Dune.quote , read: false)
+
+    respond_to do |format|
+      format.html { redirect_to emails_path }
+      format.js { }
+    end
+  end
+
+
 end
