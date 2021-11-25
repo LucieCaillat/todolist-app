@@ -1,2 +1,14 @@
 <h2><%= email.objet%></h3>
 <p><%=email.body%><p>
+<div class="row">
+    <div style="margin: 40px;">
+            <%= form_tag(email_path(email.id), method: :delete, class: "form", remote: true) do %>    
+                <%= submit_tag 'Suprimer l\'email', :name => 'commit'%>
+            <% end %>
+    </div>
+    <div style="margin: 40px;">
+            <%= form_tag(emails_path, method: :post, class: "form", remote: true) do %>    
+                <%= submit_tag 'Marquer comme non-lu', :name => 'commit'%>
+            <% end %>
+    </div>
+</div>
