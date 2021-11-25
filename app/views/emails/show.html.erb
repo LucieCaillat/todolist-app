@@ -1,6 +1,5 @@
 <div style="margin: 40px;">
     <h1 class="text-center mb-4">Vos emails</h1>
-    
     <div class="row">
     
     
@@ -12,14 +11,14 @@
                     <%if email.read == false%>
                         <div class="card border-dark row">                    
                             <div class="card-header">
-                                <p class="strong"> <%= link_to "#{email.objet}", email_path(email.id), remote: true %></p>
+                                <p class="strong"> <%= link_to "#{email.objet}", "email_path(#{email.id})", remote: true %></p>
                             </div>
                         </div>
                             
                     <% else %>
                         <div class="card border-light row">                    
                             <div class="card-header">
-                                <p class="strong"> <%= link_to "#{email.objet}", email_path(email.id), remote: true %></p>
+                                <p class="strong"> <%= link_to "#{email.objet}", "email_path(#{email.id})", remote: true %></p>
                             </div>
                         </div>
                         
@@ -29,8 +28,8 @@
             <%end%>
         </div>
 
-        <div class="card col-8" id="read-email">
-        <div></div>
+        <div class="card col-8">
+        <p>Coucou!!!!!!!!!!!!!!!!</p>
         </div>
     </div>
 </div>
